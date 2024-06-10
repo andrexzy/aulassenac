@@ -40,3 +40,4 @@ print(idade_nova)
 
 idade_nova=idade_nova/30
 print(idade_nova)
+
