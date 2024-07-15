@@ -1,0 +1,19 @@
+-- possso realizar comentários no meu script;
+
+-- Criaçao do arquivo de banco de dados se nao existir;
+CREATE DATABASE IF NOT EXISTS banco_de_dados;
+
+-- Especificar qual banc de dados estou usando;
+USE banco_de_dados;
+
+-- Criar uma tabela no banco de dados usado;
+CREATE TABLE IF NOT EXISTS usuarios (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR (100) NOT NULL UNIQUE,
+    senha VARCHAR (255) NOT NULL,
+    data_de_nascimento DATE
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMES,
+    
+    );
